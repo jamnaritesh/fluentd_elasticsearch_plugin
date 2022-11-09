@@ -1,0 +1,31 @@
+current directory: /test/gems/yajl-ruby-1.4.3/ext/yajl
+/usr/local/bin/ruby -I /usr/local/lib/ruby/3.1.0 -r ./siteconf20221109-8-f3tj3.rb extconf.rb
+creating Makefile
+
+current directory: /test/gems/yajl-ruby-1.4.3/ext/yajl
+make DESTDIR\= clean
+
+current directory: /test/gems/yajl-ruby-1.4.3/ext/yajl
+make DESTDIR\=
+compiling yajl.c
+compiling yajl_alloc.c
+compiling yajl_buf.c
+compiling yajl_encode.c
+compiling yajl_ext.c
+yajl_ext.c: In function ‘rb_yajl_parser_parse’:
+yajl_ext.c:538:17: warning: variable ‘stat’ set but not used [-Wunused-but-set-variable]
+  538 |     yajl_status stat;
+      |                 ^~~~
+yajl_ext.c: At top level:
+cc1: note: unrecognized command-line option ‘-Wno-self-assign’ may have been intended to silence earlier diagnostics
+cc1: note: unrecognized command-line option ‘-Wno-parentheses-equality’ may have been intended to silence earlier diagnostics
+cc1: note: unrecognized command-line option ‘-Wno-constant-logical-operand’ may have been intended to silence earlier diagnostics
+compiling yajl_gen.c
+compiling yajl_lex.c
+compiling yajl_parser.c
+compiling yajl_version.c
+linking shared-object yajl/yajl.so
+
+current directory: /test/gems/yajl-ruby-1.4.3/ext/yajl
+make DESTDIR\= install
+/usr/bin/install -c -m 0755 yajl.so ./.gem.20221109-8-2u7264/yajl

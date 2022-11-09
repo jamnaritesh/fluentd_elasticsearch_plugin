@@ -1,0 +1,20 @@
+current directory: /test/gems/strptime-0.2.5/ext/strptime
+/usr/local/bin/ruby -I /usr/local/lib/ruby/3.1.0 -r ./siteconf20221109-8-r6n7lg.rb extconf.rb
+checking for rb_timespec_now()... yes
+checking for rb_time_timespec_new()... yes
+checking for rb_time_utc_offset()... yes
+creating Makefile
+
+current directory: /test/gems/strptime-0.2.5/ext/strptime
+make DESTDIR\= clean
+
+current directory: /test/gems/strptime-0.2.5/ext/strptime
+make DESTDIR\=
+compiling ruby_time.c
+compiling strftime.c
+compiling strptime.c
+linking shared-object strptime/strptime.so
+
+current directory: /test/gems/strptime-0.2.5/ext/strptime
+make DESTDIR\= install
+/usr/bin/install -c -m 0755 strptime.so ./.gem.20221109-8-lc6i2e/strptime
